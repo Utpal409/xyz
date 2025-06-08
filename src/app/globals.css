@@ -1,0 +1,111 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Violet-Blue Theme (Default) */
+    --background: 240 20% 12%; /* Very dark violet-blue */
+    --foreground: 240 15% 88%; /* Light violet-blue tinted gray */
+
+    --card: 240 20% 18%; /* Dark violet-blue for cards */
+    --card-foreground: 240 15% 85%; /* Light text for cards */
+
+    --popover: 240 20% 15%; /* Popover background */
+    --popover-foreground: 240 15% 85%; /* Popover text */
+
+    --primary: 240 70% 65%; /* Vibrant violet-blue for primary actions */
+    --primary-foreground: 240 60% 95%; /* Light text on primary */
+
+    --secondary: 240 40% 30%; /* Muted, darker violet-blue */
+    --secondary-foreground: 240 15% 80%; /* Light text on secondary */
+
+    --muted: 240 20% 25%; /* Muted background elements */
+    --muted-foreground: 240 15% 70%; /* Text on muted backgrounds - ensured lighter */
+
+    --accent: 240 60% 55%; /* Accent violet-blue */
+    --accent-foreground: 240 60% 95%; /* Text on accent */
+
+    --destructive: 0 84.2% 60.2%; /* Red for destructive actions */
+    --destructive-foreground: 0 0% 98%; /* Light text on destructive */
+
+    --border: 240 20% 28%; /* Border color */
+    --input: 240 20% 22%; /* Input field background */
+    --ring: 240 70% 70%; /* Focus ring color */
+
+    --chart-1: 240 70% 60%;
+    --chart-2: 240 70% 50%;
+    --chart-3: 240 70% 40%;
+    --chart-4: 240 70% 70%;
+    --chart-5: 240 70% 80%;
+    --radius: 0.5rem;
+
+    /* Sidebar colors (Violet-Blue Theme) */
+    --sidebar-background: 240 25% 15%; /* Dark violet-blue for sidebar */
+    --sidebar-foreground: 240 15% 80%; /* Sidebar text */
+    --sidebar-primary: 240 65% 60%; /* Active sidebar item background */
+    --sidebar-primary-foreground: 240 60% 95%; /* Active sidebar item text */
+    --sidebar-accent: 240 30% 25%; /* Hovered sidebar item background */
+    --sidebar-accent-foreground: 240 15% 85%; /* Hovered sidebar item text */
+    --sidebar-border: 240 25% 22%; /* Sidebar border */
+    --sidebar-ring: 240 65% 65%; /* Sidebar focus ring */
+  }
+
+  .dark {
+    /* Black & Gray Theme - Dark Mode (Remains as an alternative) */
+    --background: 220 10% 15%; /* Very Dark Gray */
+    --foreground: 220 10% 90%; /* Light Gray */
+
+    --card: 220 10% 20%; /* Dark Gray */
+    --card-foreground: 220 10% 90%; /* Light Gray */
+
+    --popover: 220 10% 10%; /* Near Black */
+    --popover-foreground: 220 10% 90%; /* Light Gray */
+
+    --primary: 220 10% 65%; /* Medium Light Gray */
+    --primary-foreground: 220 10% 10%; /* Very Dark Gray for text on primary */
+
+    --secondary: 220 10% 25%; /* Darker Gray */
+    --secondary-foreground: 220 10% 90%; /* Light Gray */
+
+    --muted: 220 10% 30%; /* Dark Gray - lighter than secondary */
+    --muted-foreground: 220 10% 60%; /* Medium Light Gray */
+
+    --accent: 220 10% 80%; /* Light Gray for accents */
+    --accent-foreground: 220 10% 10%; /* Very Dark Gray for text on accent */
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 10% 35%; /* Medium Dark Gray border */
+    --input: 220 10% 28%; /* Darker input bg */
+    --ring: 220 10% 65%; /* Primary gray for rings */
+    
+    --chart-1: 220 10% 60%;
+    --chart-2: 220 10% 50%;
+    --chart-3: 220 10% 40%;
+    --chart-4: 220 10% 70%;
+    --chart-5: 220 10% 80%;
+
+    /* Sidebar colors for dark mode (Black & Gray Theme) */
+    --sidebar-background: 220 10% 12%; /* Very dark gray for sidebar */
+    --sidebar-foreground: 220 10% 90%; /* Light text */
+    --sidebar-primary: 220 10% 70%; /* Lighter Gray for active items */
+    --sidebar-primary-foreground: 220 10% 10%; /* Dark text on active */
+    --sidebar-accent: 220 10% 25%; /* Dark gray for hover */
+    --sidebar-accent-foreground: 220 10% 90%; /* Light text on hover */
+    --sidebar-border: 220 10% 30%;
+    --sidebar-ring: 220 10% 70%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
